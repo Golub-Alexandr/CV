@@ -29,9 +29,9 @@ body{
     margin-bottom: 20px;
 }
 
-/* main_content styles */
+/* main-content styles */
 
-.main_content{
+.main-content{
     background-color:var(--main-bg-cl) ;
     padding: 100px 90px;
     margin: 0 0 40px 0;
@@ -42,7 +42,7 @@ body{
     background-color: var(--main-bg-cl);
 }
 
-.about_my_profession{
+.about-my-profession{
     font-style: normal;
     font-weight: bold;
     font-size:21px;
@@ -51,7 +51,7 @@ body{
     margin: 0 0 20px 0;
 }
 
-.my_name{
+.my-name{
     font-style: normal;
     font-weight: bold;
     font-size: 45px;
@@ -60,7 +60,7 @@ body{
     margin: 0 0 25px 0;
 }
 
-.about_me{
+.about-me{
     width: 400px;
     font-style: normal;
     font-weight: normal;
@@ -92,23 +92,23 @@ body{
     margin-bottom: 10px;
 }
 
-.my_projects_list{
+.my-projects-list{
     padding: 0 0 0 17px;
 }
 
 /* work styles */
 
-.my_projects_item{
+.my-projects-item{
     color: var(--main-txt-cl);
     font-weight: bold;
     }
 
-.my_projects_bracket{   
+.my-projects-bracket{   
     font-weight: bold;
     color: var(--main-txt-cl);
 }
 
-.my_projects_text{
+.my-projects-text{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -117,7 +117,7 @@ body{
     margin-left: 5px;
 }
 
-.my_project_link{
+.my-project-link{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -153,7 +153,7 @@ body{
     margin: 0 0 10px 0;
 }
 
-.work_experience_time{
+.work-experience-time{
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -162,17 +162,17 @@ body{
     margin-left:3px;
     }
 
-.work_experience_divider{
+.work-experience-divider{
     color: var(--main-txt-cl);
     font-weight: 500;
 }
 
-.work_experience_duties{
+.work-experience-duties{
     padding: 0 0 0 18px;
 } 
 
 
-.work_experience_duty{
+.work-experience-duty{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -180,11 +180,11 @@ body{
     color: #595959;
 }
 
-.my_work_experience_company{
+.my-work-experience-company{
     margin: 0 0 0 0;
 }
 
-.education_block{
+.education-block{
     background-color: var(--main-bg-cl);
     margin-top: 35px ;
     margin-bottom: 30px;
@@ -194,19 +194,19 @@ body{
 
     /* sidebar style */
 
-.sidebar_section{
+.sidebar-section{
     background-color: #1E2939;
     width: 370px;
     padding:40px 0;
 }
 
-    .contact_section,
-    .tech_skills_section,
-    .soft_skills_section{
+    .contact-section,
+    .tech-skills-section,
+    .soft-skills-section{
     margin: 50px 0 0 40px;
     }
 
-.sidebar_title{
+.sidebar-title{
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
@@ -218,7 +218,7 @@ body{
 /* contacts section */
 
 
-.contact_section_link{
+.contact-section-link{
     color: rgb(231, 213, 178);
     font-style: normal;
     font-weight: normal;
@@ -226,7 +226,7 @@ body{
     line-height: 24px;
 }
 
-.contact_section_type{
+.contact-section-type{
 
     font-weight: bold;
     font-size: 14px;
@@ -238,15 +238,15 @@ body{
 
 /* Tech & Soft skills list */
 
-.skills_list{
+.skills-list{
     padding: 0 0 0 17px;
 }
 
-.skills_list_item{
+.skills-list-item{
     color: #FB6D3A;
 }
 
-.skills_list_item_text{
+.skills-list-item-text{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -262,7 +262,7 @@ body{
     color: var(--main-txt-cl);
 }
 
-.education_experience_time{
+.education-experience-time{
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
