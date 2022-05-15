@@ -9,6 +9,7 @@
     --main-bg-cl:#fff;
     --sec-bg-cl:#F5F7FA;
     --sidebar-bg-cl:#1E2939;
+    --gold-bg-cl:#e7d5b2;
     /* grid */
 }
 
@@ -27,8 +28,8 @@ body{
     width: 1000px; 
     background-color: var(--main-bg-cl);
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .list{
@@ -213,10 +214,14 @@ body{
     padding:40px 0;
 }
 
-    .contact-section,
-    .tech-skills-section,
-    .soft-skills-section{
-    margin: 50px 0 0 40px;
+.contact-section{
+    margin: 20px 0 0 40px;
+}
+.tech-skills-section{
+    margin-left: 40px;
+}
+.soft-skills-section{
+    margin-left: 40px;
     }
 
 .sidebar-title{
@@ -234,7 +239,7 @@ body{
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #e7d5b2;
+    color: var(--gold-bg-cl);
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -255,7 +260,42 @@ body{
     color: #FB6D3A;
 }
 
+.social-list {
+    display: flex;
+    list-style: none;
+}
 
+.social-item {
+    width: 44px;
+    height: 44px;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.social-icon {
+    fill: var(--gold-bg-cl);
+}
+
+.social-link:hover,
+.social-link:focus{
+    background-color: var(--main-bg-cl);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon{
+    fill: var(--orange-txt-cl);
+}
 /* Tech & Soft skills list */
 
 .skills-list{
