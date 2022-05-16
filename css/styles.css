@@ -1,5 +1,6 @@
 :root{
     /* font */
+    --main-font-family:'Montserrat', sans-serif;
     /* text color */
     --main-txt-cl:#000;
     --sec-txt-cl:#595959;
@@ -14,18 +15,25 @@
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--main-font-family);
     background-color: var(--sec-bg-cl);
     margin:0px;
 	padding:0px;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* main styles */
 .main{
     display: flex;
     flex-direction: row-reverse;
     background-color: var(--sec-bg-cl);
-    width: 1000px; 
+    width: 1200px; 
     background-color: var(--main-bg-cl);
     margin: 0 auto;
     margin-top: 15px;
@@ -46,27 +54,28 @@ body{
 /* main-content styles */
 
 .main-content{
+    display: inline-block;
     background-color:var(--main-bg-cl) ;
     padding: 100px 90px;
-    margin: 0 0 40px 0;
+    
 }
 /* about styless */
 
 .about{
     background-color: var(--main-bg-cl);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .about-my-profession{
-    font-style: normal;
     font-weight: bold;
     font-size:21px;
-    line-height: 28px;
+    line-height: 1.3;
     color: var(--main-txt-cl);
     margin: 0 0 20px 0;
 }
 
 .my-name{
-    font-style: normal;
     font-weight: bold;
     font-size: 45px;
     line-height: 55px;   
@@ -76,10 +85,7 @@ body{
 
 .about-me{
     width: 400px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     color: var(--main-txt-cl);
 }
 
@@ -89,11 +95,13 @@ body{
     background-color: var(--main-bg-cl);   
     margin-top: 35px ;
     margin-bottom: 30px;
-    margin-left: 10px;
-    margin-right: 90px;
     /* margin: 100px 90px 300px 60px;
     margin: 50px;
     margin: 100px 50 px; */
+}
+
+.project-title{
+    margin-bottom: 20px;
 }
 
 .title{
@@ -101,44 +109,47 @@ body{
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
-    line-height: 27px;
+    line-height: 1.2;
     color: var(--main-txt-cl);
     margin-bottom: 10px;
 }
 
-.my-projects-list{
-    padding: 0 0 0 17px;
+.project-list{
+    margin-top: 35px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.project-item {
+    flex-basis: calc((100% - 20px)/6);
+}
+
+.project-item:not(:nth-child(5n)) {
+    margin-right: 10px;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.project-image:hover,
+.project-image:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-image{
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 /* work styles */
 
-.my-projects-item{
-    color: var(--main-txt-cl);
-    font-weight: bold;
-    }
-
-.my-projects-bracket{   
-    font-weight: bold;
-    color: var(--main-txt-cl);
-}
-
-.my-projects-text{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color:var(--sec-txt-cl);
-    margin-left: 5px;
-}
-
-.my-project-link{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color:var(--sec-txt-cl);
-}
-    
 .work{
     background-color: var(--main-bg-cl); 
     margin-top: 35px ;
@@ -171,7 +182,7 @@ body{
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 1.2;
     color: var(--grey-txt-cl);
     margin-left:3px;
     }
@@ -190,7 +201,7 @@ body{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     color: var(--sec-txt-cl);
 }
 
@@ -228,7 +239,7 @@ body{
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
-    line-height: 27px;
+    line-height: 1.2;
     color: var(--main-bg-cl);
     margin-bottom: 10px;
 }
@@ -243,7 +254,7 @@ body{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 }
 
 .contact-link-mail{
@@ -310,7 +321,7 @@ body{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     color: var(--main-bg-cl);   
 }
 
@@ -318,7 +329,7 @@ body{
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.2;
     color: var(--main-txt-cl);
 }
 
@@ -326,6 +337,6 @@ body{
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 1.2;
     color: var(--grey-txt-cl); 
 }
