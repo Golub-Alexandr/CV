@@ -102,6 +102,7 @@ img {
 
 .project-title{
     margin-bottom: 20px;
+    display: flex;
 }
 
 .title{
