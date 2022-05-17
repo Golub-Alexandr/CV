@@ -303,12 +303,16 @@ img {
 .social-link:hover,
 .social-link:focus{
     background-color: var(--main-bg-cl);
+    outline: none
 }
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon{
     fill: var(--orange-txt-cl);
 }
+
+
+
 /* Tech & Soft skills list */
 
 .skills-list{
