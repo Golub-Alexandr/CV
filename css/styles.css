@@ -35,9 +35,7 @@ img {
     background-color: var(--sec-bg-cl);
     width: 1200px; 
     background-color: var(--main-bg-cl);
-    margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px auto;
 }
 
 .list{
@@ -223,7 +221,7 @@ img {
 
 .sidebar-section{
     background-color: var(--sidebar-bg-cl);
-    width: 370px;
+    width: 400px;
     padding:40px 0;
 }
 
