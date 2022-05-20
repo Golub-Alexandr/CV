@@ -12,6 +12,13 @@
     --sidebar-bg-cl:#1E2939;
     --gold-bg-cl:#e7d5b2;
     /* grid */
+    /* animation */
+    --slow-animation: color 600ms ease-out;
+    --fast-animation: color 400ms ease-out;
+    --fast-bg-animation: background-color 400ms ease-out;
+    --slow-bg-animation: background-color 600ms ease-out;
+    --fast-fill-animation: fill 400ms ease-out;
+    --slow-fill-animation: fill 600ms ease-out;
 }
 
 body{
@@ -136,17 +143,15 @@ img {
     text-decoration: none;
 }
 
-.project-image:hover,
-.project-image:focus{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.project-image{
+    border: 4px double var(--gold-bg-cl);
 }
 
-.project-image{
-    border-top: 1px solid var(--gold-bg-cl);
-    border-left: 1px solid var(--gold-bg-cl);
-    border-right: 1px solid var(--gold-bg-cl);
-    border-bottom: 1px solid var(--gold-bg-cl);
-}
+.project-image:hover,
+.project-image:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+} 
+
 
 /* work styles */
 
@@ -269,6 +274,7 @@ img {
 .contact-link:hover,
 .contact-link:focus{
     color: #FB6D3A;
+    transition: var(--slow-animation);
 }
 
 .social-list {
@@ -301,12 +307,14 @@ img {
 .social-link:hover,
 .social-link:focus{
     background-color: var(--main-bg-cl);
-    outline: none
+    outline: none;
+    transition: var(--slow-bg-animation);
 }
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon{
     fill: var(--orange-txt-cl);
+    transition: var(--fast-fill-animation);
 }
 
 
