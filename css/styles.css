@@ -13,12 +13,13 @@
     --gold-bg-cl:#e7d5b2;
     /* grid */
     /* animation */
-    --slow-animation: color 600ms ease-out;
-    --fast-animation: color 400ms ease-out;
-    --fast-bg-animation: background-color 400ms ease-out;
-    --slow-bg-animation: background-color 600ms ease-out;
-    --fast-fill-animation: fill 400ms ease-out;
-    --slow-fill-animation: fill 600ms ease-out;
+    --slow-animation-cl: color 400ms ease-out;
+    --fast-animation-cl: color 200ms ease-out;
+    --fast-bg-animation: background-color 200ms ease-out;
+    --slow-bg-animation: background-color 200ms ease-out;
+    --fast-fill-animation: fill 200ms ease-out;
+    --slow-fill-animation: fill 400ms ease-out;
+    --box-shadow--animation: box-shadow 200ms ease-out;
 }
 
 body{
@@ -145,6 +146,7 @@ img {
 
 .project-image{
     border: 4px double var(--gold-bg-cl);
+    transition: var(--box-shadow--animation);
 }
 
 .project-image:hover,
@@ -260,6 +262,7 @@ img {
     font-weight: normal;
     font-size: 14px;
     line-height: 1.7;
+    transition: var(--slow-animation-cl);
 }
 
 .contact-link-mail{
@@ -273,8 +276,7 @@ img {
 
 .contact-link:hover,
 .contact-link:focus{
-    color: #FB6D3A;
-    transition: var(--slow-animation);
+    color: var(--orange-txt-cl);
 }
 
 .social-list {
@@ -298,23 +300,23 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    transition: var(--slow-bg-animation);
 }
 
 .social-icon {
     fill: var(--gold-bg-cl);
+    transition: var(--fast-fill-animation);
 }
 
 .social-link:hover,
 .social-link:focus{
     background-color: var(--main-bg-cl);
     outline: none;
-    transition: var(--slow-bg-animation);
 }
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon{
     fill: var(--orange-txt-cl);
-    transition: var(--fast-fill-animation);
 }
 
 
