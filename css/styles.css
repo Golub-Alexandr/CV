@@ -87,6 +87,7 @@ img {
     line-height: 55px;   
     color: var(--main-txt-cl);
     margin: 0 0 25px 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .about-me{
@@ -253,30 +254,15 @@ img {
 
 /* contacts section */
 
-.contact-link{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--gold-bg-cl);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    transition: var(--slow-animation-cl);
+/* Social Icons */
+
+.contact-section{
+    display: flexbox;
 }
 
-.contact-link-mail{
-    padding-bottom: 7px;
-}
-
-.contact-icon{
-    fill: currentColor;
-    margin-right: 7px;
-}
-
-.contact-link:hover,
-.contact-link:focus{
-    color: var(--orange-txt-cl);
+.sidebar-social {
+    align-items: flex-start;
+    margin-left: -12px;
 }
 
 .social-list {
@@ -309,17 +295,41 @@ img {
 }
 
 .social-link:hover,
-.social-link:focus{
+.social-link:focus {
     background-color: var(--main-bg-cl);
     outline: none;
 }
 
 .social-link:hover .social-icon,
-.social-link:focus .social-icon{
+.social-link:focus .social-icon {
     fill: var(--orange-txt-cl);
 }
 
+.contact-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--gold-bg-cl);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    transition: var(--slow-animation-cl);
+}
 
+.contact-link-mail{
+    padding-bottom: 7px;
+}
+
+.contact-icon{
+    fill: currentColor;
+    margin-right: 7px;
+}
+
+.contact-link:hover,
+.contact-link:focus{
+    color: var(--orange-txt-cl);
+}
 
 /* Tech & Soft skills list */
 
