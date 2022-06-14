@@ -66,6 +66,17 @@ img {
     padding: 100px 90px;
     
 }
+
+.title {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.2;
+    color: var(--main-txt-cl);
+    margin-bottom: 10px;
+}
+
 /* about section */
 
 .about{
@@ -111,16 +122,6 @@ img {
 .project__capture {
     margin-bottom: 20px;
     display: flex;
-}
-
-.project__title {
-    font-size: 45px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 1.2;
-    color: var(--main-txt-cl);
-    margin-bottom: 10px;
 }
 
 .project__list{
@@ -169,6 +170,10 @@ img {
 
 .work__container {
     margin: 0 0 0 0;
+}
+
+.work__title{
+    margin-bottom: 20px;
 }
 
 .work__list {
@@ -226,6 +231,14 @@ img {
     font-size: 12px;
     line-height: 1.2;
     color: var(--grey-txt-cl);
+}
+
+.education__txt {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--main-txt-cl);
 }
 
 /* sidebar section */
@@ -350,11 +363,5 @@ img {
     color: var(--main-bg-cl);   
 }
 
-.profession{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.2;
-    color: var(--main-txt-cl);
-}
+
 
